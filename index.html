@@ -3,6 +3,7 @@
 <head>
     <title>Faculdade Exemplo</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
             margin: 0;
@@ -45,6 +46,11 @@
             color: white;
             text-align: center;
         }
+        footer a {
+            color: #0066ff;
+            text-decoration: none;
+        }
+
     </style>
 </head>
 <body>
@@ -55,6 +61,7 @@
     <meta name="description" content="Faculdade Exemplo oferece cursos de graduação e pós-graduação com excelência. Venha fazer parte da nossa comunidade acadêmica.">
     <meta name="keywords" content="faculdade, cursos, graduação, pós-graduação, ensino superior, educação">
     <!-- Comentário 1 (SEO): Ausência de meta description prejudica a indexação e o CTR nos buscadores -->
+    <!--Feito!-->
 </header>
 
 <nav>
@@ -63,6 +70,7 @@
     <a title="Informações Gerais" href="#sobre">Sobre</a>
     <a title="Formas de Contato" href="contato.html">Contato</a>
     <!-- Comentário 2 (SEO): Links usam âncoras genéricas; textos âncora otimizados ajudam no ranqueamento -->
+    <!--Feito!-->
 </nav>
 
 <div class="banner">
@@ -72,67 +80,82 @@
 <main>
     <section>
         <h2 id="sobre">Quem Somos</h2>
-        <p>A Faculdade Exemplo é uma instituição fictícia dedicada à formação de profissionais preparados para os desafios do mercado.</p>
-        <p>Nossa missão é oferecer educação de qualidade e transformar a vida de nossos alunos.</p>
+        <p>A Faculdade Exemplo é uma referência em ensino superior, formando profissionais completos e preparados para os desafios do mercado de trabalho.</p>
+        <p>A missão da nossa faculdade é oferecer educação de qualidade, garantindo que cada aluno tenha uma experiência transformadora em sua jornada no ensino superior.</p>
         <!-- Comentário 3 (SEO): Conteúdo não possui palavras-chave estratégicas relacionadas a "faculdade" e "ensino superior" -->
+        <!--Feito!-->
     </section>
 
     <section>
         <h2 id="cursos">Nossos Cursos</h2>
         <ul>
-            <li>Administração</li>
-            <li>Ciência da Computação</li>
-            <li>Direito</li>
-            <li>Engenharia Civil</li>
-            <li>Medicina</li>
+            <li><a href="cursos/administracao.html" title="Curso de Administração">Administração</a></li>
+            <li><a href="cursos/ciencia-da-computacao.html" title="Curso de Ciência da Computação">Ciência da Computação</a></li>
+            <li><a href="cursos/direito.html" title="Curso de Direito">Direito</a></li>
+            <li><a href="cursos/engenharia-civil.html" title="Curso de Engenharia Civil">Engenharia Civil</a></li>
+            <li><a href="cursos/medicina.html" title="Curso de Medicina">Medicina</a></li>
         </ul>
         <!-- Comentário 4 (SEO): Lista de cursos não possui links internos, reduzindo a interligação e relevância interna -->
+        <!--Feito!-->
     </section>
 
     <section>
         <h2>Infraestrutura</h2>
-        <img src="campus.jpg">
+        <img src="campus.jpg" alt="Imagem do campus da Faculdade Exemplo" style="width:100%; height:auto;">
         <p>Nosso campus conta com biblioteca, laboratórios modernos e áreas de convivência.</p>
         <p>Estamos sempre investindo em tecnologia e inovação.</p>
         <!-- Comentário 5 (SEO): Imagem sem atributo alt não contribui para SEO em buscas por imagens -->
+        <!--Feito!-->
     </section>
 
     <section>
         <h2>Corpo Docente</h2>
-        <p>Contamos com professores altamente qualificados, mestres e doutores em suas áreas.</p>
-        <p>O corpo docente é composto por profissionais atuantes no mercado e com ampla experiência acadêmica.</p>
+        <p>Contamos com professores altamente qualificados, mestres e doutores em suas áreas, incluindo especializações em Engenharia Civil, Direito, Administração, Medicina e Ciência da Computação.</p>
+        <p>Nosso corpo docente é formado por profissionais atuantes no mercado, com ampla experiência acadêmica e em pesquisa científica, inovação tecnológica, gestão empresarial, saúde e desenvolvimento de software.</p>
+        <p>Os docentes participam de projetos de pesquisa em áreas como inteligência artificial, direito digital, gestão hospitalar, sustentabilidade na construção civil e empreendedorismo.</p>
         <!-- Comentário 6 (SEO): Não há conteúdo rico em palavras-chave sobre especializações ou áreas de pesquisa -->
+        <!--Feito!-->
     </section>
 
     <section>
         <h2>Notícias Recentes</h2>
-        <article>
-            <h3>Semana Acadêmica 2025</h3>
-            <p>A Faculdade Exemplo realizou sua tradicional Semana Acadêmica com palestras e workshops.</p>
+        <article itemscope itemtype="https://schema.org/NewsArticle">
+            <h3 itemprop="headline">Semana Acadêmica 2025</h3>
+            <p itemprop="description">A Faculdade Exemplo realizou sua tradicional Semana Acadêmica com palestras e workshops.</p>
+            <meta itemprop="datePublished" content="2025-05-10">
+            <meta itemprop="author" content="Faculdade Exemplo">
         </article>
-        <article>
-            <h3>Parceria Internacional</h3>
-            <p>Firmamos acordo com universidades estrangeiras para intercâmbio de alunos.</p>
+        <article itemscope itemtype="https://schema.org/NewsArticle">
+            <h3 itemprop="headline">Parceria Internacional</h3>
+            <p itemprop="description">Firmamos acordo com universidades estrangeiras para intercâmbio de alunos.</p>
+            <meta itemprop="datePublished" content="2025-06-01">
+            <meta itemprop="author" content="Faculdade Exemplo">
         </article>
         <!-- Comentário 7 (SEO): Notícias não possuem marcação estruturada (Schema.org) para artigos -->
+         <!--Feito!-->
     </section>
 
     <section>
         <h2>Depoimentos</h2>
-        <blockquote>
-            <p>"A Faculdade Exemplo mudou minha vida. Hoje atuo em uma grande empresa graças à formação recebida."</p>
-            <footer>- Ex-Aluno</footer>
+        <blockquote itemscope itemtype="https://schema.org/Review">
+            <p itemprop="reviewBody">"A Faculdade Exemplo mudou minha vida. Hoje atuo em uma grande empresa graças à formação recebida."</p>
+            <footer>
+                <span itemprop="author">Ex-Aluno</span>
+            </footer>
         </blockquote>
-        <blockquote>
-            <p>"Professores qualificados e ótima estrutura. Recomendo a todos."</p>
-            <footer>- Aluna</footer>
+        <blockquote itemscope itemtype="https://schema.org/Review">
+            <p itemprop="reviewBody">"Professores qualificados e ótima estrutura. Recomendo a todos."</p>
+            <footer>
+                <span itemprop="author">Aluna</span>
+            </footer>
         </blockquote>
         <!-- Comentário 8 (SEO): Depoimentos não possuem dados estruturados (review schema) para melhorar destaque no Google -->
+        <!--Feito!-->
     </section>
 
     <section>
         <h2>Fale Conosco</h2>
-        <form>
+        <form action="obrigado.html" method="post">
             <label>Nome:</label><br>
             <input type="text" name="nome"><br><br>
             <label>Email:</label><br>
@@ -141,6 +164,7 @@
             <input type="submit" value="Enviar">
         </form>
         <!-- Comentário 9 (SEO): Formulário não possui página de obrigado (thank you page) indexável para rastreamento de conversões -->
+        <!--Feito!-->
     </section>
 </main>
 
@@ -148,7 +172,11 @@
     <p>&copy; 2025 Faculdade Exemplo - Todos os direitos reservados</p>
     <p>Endereço: Rua da Educação, 123 - Cidade Exemplo</p>
     <p>Telefone: (00) 1234-5678</p>
+    <a href="https://www.instagram.com/">Instagram</a>
+    <a href="https://www.facebook.com/">Facebook</a>
+    <a href="sitemap.html">Sitemap</a>
     <!-- Comentário 10 (SEO): Rodapé não contém links para sitemap, política de privacidade e redes sociais otimizadas -->
+    <!--Feito!-->
 </footer>
 
 </body>
